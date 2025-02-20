@@ -1,0 +1,63 @@
+.btn {
+  @apply flex gap-2 items-center justify-center py-2 px-4 font-semibold shadow rounded-md;
+}
+.btn.btn-danger {
+  @apply text-white bg-red-600 shadow-red-400/40;
+}
+.btn.btn-danger:hover {
+  @apply bg-red-600;
+}
+.btn.btn-success {
+  @apply text-white bg-green-600 shadow-green-400/40;
+}
+.btn.btn-success:hover {
+  @apply bg-green-700;
+}
+.btn.btn-primary {
+  @apply text-white bg-blue-600 shadow-blue-400/40;
+}
+.btn.btn-primary:hover {
+  @apply bg-blue-700;
+}
+.btn.btn-secondary {
+  @apply text-white bg-gray-600 shadow-gray-400/40;
+}
+.btn.btn-secondary:hover {
+  @apply bg-gray-700;
+}
+.btn.btn-warning {
+  @apply text-white bg-yellow-600 shadow-yellow-400/40;
+}
+.btn.btn-warning:hover {
+  @apply bg-yellow-700;
+}
+.btn.btn-info {
+  @apply text-white bg-cyan-600 shadow-cyan-400/40;
+}
+.btn.btn-info:hover {
+  @apply bg-cyan-700;
+}
+.btn.btn-light {
+  @apply text-black bg-white shadow-white/40;
+}
+.btn.btn-light:hover {
+  @apply bg-gray-300;
+}
+.btn.btn-black {
+  @apply text-white bg-black shadow-black/40;
+}
+.btn.btn-black:hover {
+  @apply bg-gray-800;
+}
+.btn.btn-dark {
+  @apply text-white bg-gray-700 shadow-gray-700/40;
+}
+.btn.btn-dark:hover {
+  @apply bg-gray-600;
+}
+.btn:disabled {
+  @apply bg-gray-400 shadow-gray-400/40;
+}
+.btn:disabled:hover {
+  @apply bg-gray-400;
+}/*# sourceMappingURL=button.css.map */

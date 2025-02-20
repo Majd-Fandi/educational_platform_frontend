@@ -1,0 +1,67 @@
+.alert {
+    @apply flex p-4 rounded-lg shadow-md;
+
+    &.alert-danger {
+        @apply bg-red-300 text-red-800 shadow-red-400/20;
+
+        &:hover {
+            @apply bg-red-500
+        }
+    }
+
+    &.alert-success {
+        @apply bg-green-300 text-green-800 shadow-green-400/20;
+
+        &:hover {
+            @apply bg-green-500
+        }
+    }
+
+    &.alert-warning {
+        @apply bg-yellow-300 text-yellow-800 shadow-yellow-400/20;
+
+        &:hover {
+            @apply bg-yellow-500
+        }
+    }
+
+    &.alert-primary {
+        @apply bg-blue-300 text-blue-800 dark:text-white dark:bg-gray-700 shadow-md shadow-gray-400/20;
+
+        &:hover {
+            @apply bg-blue-500
+        }
+    }
+
+    &.alert-info {
+        @apply bg-cyan-300 text-cyan-800 shadow-cyan-400/20;
+
+        &:hover {
+            @apply bg-cyan-500
+        }
+    }
+
+    &.alert-dark {
+        @apply bg-black text-white shadow-black/20;
+
+        &:hover {
+            @apply bg-gray-900
+        }
+    }
+
+    &.alert-light {
+        @apply bg-white text-black shadow-white/20;
+
+        &:hover {
+            @apply bg-gray-300
+        }
+    }
+
+    &.alert-secondary {
+        @apply bg-gray-800 text-white shadow-gray-400/20;
+
+        &:hover {
+            @apply bg-gray-700
+        }
+    }
+}

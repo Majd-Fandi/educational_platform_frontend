@@ -1,21 +1,42 @@
+@import '../styles/components/main.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./../public/assets/fonts/Tajawal/Tajawal-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./../public/assets/fonts/Tajawal/Tajawal-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-50 dark:bg-gray-800;
+  font-family: 'Tajawal', sans-serif;
+  user-select: none;
 }
+
+input {
+  border: 1px solid #b3c1ff;
+}
+
+:is(input[type="text"], input[type="email"], input[type="password"]):focus {
+  outline: none; 
+  border-color: #b3c1ff;
+  box-shadow: 2px 4px 5px #b3c1ffa3;
+}
+
+input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+}
+
