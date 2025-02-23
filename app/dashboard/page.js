@@ -3,6 +3,22 @@
 import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
 
+import YouTube from "react-youtube";
+import VideoUpload from '@/components/VideoUpload';
+import VideoList from '@/components/VideoList';
+
+
+const videoId = "d_F2qdjxm-I";
+
+const opts = {
+    height: "315",
+    width: "560",
+    playerVars: {
+        autoplay: 0, // Auto-play the video on load
+    },
+};
+
+
 const Dashboard = () => {
     const { user } = useAuth();
 
@@ -10,8 +26,17 @@ const Dashboard = () => {
         <div className='w-full text-center my-10'>
 
             <p className='text-2xl '>Welcome, {user ? user.username : 'Guest'}</p>
-       
+
             {!user && <Link className="items-center gap-2 text-blue-500 hover:text-blue-600 underline underline-offset-4" href="/register">Join Us For Free</Link>}
+
+            {/* <div className="flex flex-col items-center justify-center mt-4">
+                <YouTube videoId={videoId} opts={opts} />
+            </div> */}
+            <div>
+                <VideoUpload/>
+                <VideoList/>
+            </div>
+
         </div>
     );
 };
